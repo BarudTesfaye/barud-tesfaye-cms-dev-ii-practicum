@@ -2,7 +2,7 @@
   templateType: section
   label: Image and Text
   isAvailableForNewContent: true
-  screenshotPath: ../images/section-previews/image-text.png
+  screenshotPath: ../../images/section-previews/image-text.png
 -->
 {% dnd_section
   background_color="{{ context.background_color or '#FFFFFF' }}",
@@ -21,7 +21,7 @@
           "max_height": context.image_height or 500,
           "max_width": context.image_width or 600,
           "size_type": "auto_custom_max",
-          "src": context.image or get_asset_url("../images/large-placeholder-image.png")
+          "src": context.image
         }
       %}
       {% end_dnd_module %}

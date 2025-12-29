@@ -1,6 +1,6 @@
 [
   {
-    "id": "team_card",
+    "name": "team_card",
     "label": "Team Card",
     "type": "group",
     "occurrence": {
@@ -10,19 +10,19 @@
     },
     "children": [
       {
-        "id": "image",
+        "name": "image",
         "label": "Image",
         "type": "image",
         "required": false
       },
       {
-        "id": "leader_name",
+        "name": "leader_name",
         "label": "Leader Name",
         "type": "text",
         "required": false
       },
       {
-        "id": "leader_title",
+        "name": "leader_title",
         "label": "Leader Title",
         "type": "text",
         "required": false

@@ -2,7 +2,21 @@
   {% for item in module.team_card %}
     <div class="team-card">
       {% if item.image.src %}
-        <img src="{{ item.image.src }}" alt="{{ item.image.alt or item.leader_name }}" class="team-card__image">
+        <img
+          srcset="{{ resize_image_url(item.image.src, 318) }} 318w,
+                  {{ resize_image_url(item.image.src, 340) }} 340w,
+                  {{ resize_image_url(item.image.src, 358) }} 358w,
+                  {{ resize_image_url(item.image.src, 362) }} 362w"
+          sizes="(max-width: 374px) 150px,
+                 (max-width: 767px) 200px,
+                 (max-width: 1023px) 250px,
+                 362px"
+          src="{{item.image.src }}"
+          alt="{{ item.image.alt or item.leader_name }}"
+          width="{{item.image.width}}"
+          height="{{item.image.height}}"
+          class="team-card__image"
+          {{loadingAttr}}>
       {% endif %}
       {% if item.leader_name %}
         <h3 class="team-card__name">{{ item.leader_name }}</h3>

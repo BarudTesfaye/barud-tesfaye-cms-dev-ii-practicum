@@ -1,6 +1,4 @@
 {# HubSpot supports {% include %} in CSS files at runtime. The static validator warnings are false positives. #}
-{% include './_footer.css' %}
-{% include './_header.css' %}
 {% include './_layout.css' %}
 
 body {
