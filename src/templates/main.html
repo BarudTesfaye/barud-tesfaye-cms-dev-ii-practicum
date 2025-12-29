@@ -1,0 +1,28 @@
+<!--
+  templateType: page
+  isAvailableForNewContent: true
+  label: Main Page
+  screenshotPath: ../images/template-previews/home.png
+-->
+{% extends "./layouts/base.html" %}
+
+{% block body %}
+
+{# All templates are recommended to have an h1 present for both accessibility and SEO best practice. This should be at the top of the template before any other textual content. #}
+
+{% dnd_area "dnd_area"
+  label="Main section",
+  class="body-container body-container--main"
+%}
+
+  {# Image and Text Section #}
+
+  {% include_dnd_partial path="../sections/image-text.html" %}
+
+  {# Team Members Section #}
+
+  {% include_dnd_partial path="../sections/team-members.html" %}
+
+{% end_dnd_area %}
+{% endblock body %}
+

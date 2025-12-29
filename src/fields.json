@@ -41,6 +41,25 @@
         "default": {
           "color": "#F8FAFC"
         }
+      },
+      {
+        "label": "Tertiary",
+        "name": "tertiary",
+        "type": "color",
+        "alternate_names": ["tertiary_color"],
+        "visibility": {
+          "hidden_subfields": {
+            "opacity": true
+          }
+        },
+        "inherited_value": {
+          "property_value_paths": {
+            "color": "brand_settings.colors[2]"
+          }
+        },
+        "default": {
+          "color": "#0270E0"
+        }
       }
     ]
   },

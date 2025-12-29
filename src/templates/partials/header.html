@@ -160,7 +160,7 @@
     <div class="header__language-switcher--label-current"> {{ locale_name(locale) }}</div>
   {% endif %}
 {% endmacro %}
-<header class="header">
+<header class="header" style="background-color: {{ theme.header.background.color.color or theme.global_colors.secondary.color }};">
 
   {# The link below is used for a navigation skipper which allows users navigating the site with their keyboard to skip over the site navigation. More information on the navigation skipper can be found here: https://github.com/HubSpot/cms-theme-boilerplate/wiki/Accessibility #}
 
