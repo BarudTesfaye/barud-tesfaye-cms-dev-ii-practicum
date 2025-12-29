@@ -1,32 +1,277 @@
-[
-  {
-    "name": "team_card",
-    "label": "Team Card",
-    "type": "group",
-    "occurrence": {
-      "min": 1,
-      "max": null,
-      "default": 1
+[ {
+  "id" : "f05020c4-72c4-f24d-c9da-d9d23463138a",
+  "name" : "team_card",
+  "label" : "Team Card",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : null,
+    "sorting_label_field" : "leader_name",
+    "default" : 1
+  },
+  "children" : [ {
+    "id" : "team_card.image",
+    "name" : "image",
+    "label" : "Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : false,
+    "resizable" : false,
+    "show_loading" : true,
+    "type" : "image",
+    "display_width" : null,
+    "default" : {
+      "src" : "https://50801939.fs1.hubspotusercontent-na1.net/hubfs/50801939/team-members.png",
+      "alt" : "team-members",
+      "size_type" : null,
+      "width" : 185,
+      "height" : 126,
+      "loading" : "lazy"
+    }
+  }, {
+    "id" : "team_card.leader_name",
+    "name" : "leader_name",
+    "label" : "Leader Name",
+    "required" : false,
+    "locked" : false,
+    "allow_new_line" : false,
+    "type" : "text",
+    "display_width" : null
+  }, {
+    "id" : "team_card.leader_title",
+    "name" : "leader_title",
+    "label" : "Leader Title",
+    "required" : false,
+    "locked" : false,
+    "allow_new_line" : false,
+    "type" : "text",
+    "display_width" : null
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : true,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : [ {
+    "image" : {
+      "src" : "https://50801939.fs1.hubspotusercontent-na1.net/hubfs/50801939/team-members.png",
+      "alt" : "team-members",
+      "size_type" : null,
+      "width" : 185,
+      "height" : 126,
+      "loading" : "lazy"
     },
-    "children": [
-      {
-        "name": "image",
-        "label": "Image",
-        "type": "image",
-        "required": false
-      },
-      {
-        "name": "leader_name",
-        "label": "Leader Name",
-        "type": "text",
-        "required": false
-      },
-      {
-        "name": "leader_title",
-        "label": "Leader Title",
-        "type": "text",
-        "required": false
+    "leader_name" : "",
+    "leader_title" : ""
+  } ]
+}, {
+  "id" : "styles",
+  "name" : "style",
+  "label" : "Styles",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "685ec607-f4da-aa4c-20fc-60f19555416d",
+    "name" : "team_info",
+    "label" : "Team Member Info",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "4e0490bd-c907-ac32-2174-ad012cbc46fc",
+      "name" : "text_color_field",
+      "label" : "Text Color",
+      "required" : false,
+      "locked" : false,
+      "type" : "color",
+      "display_width" : null,
+      "default" : {
+        "color" : null,
+        "opacity" : null
       }
-    ]
+    }, {
+      "id" : "3cce3ff5-07c6-7048-eee7-8192fcf7256e",
+      "name" : "background_color",
+      "label" : "Background Color",
+      "required" : false,
+      "locked" : false,
+      "type" : "color",
+      "display_width" : null,
+      "default" : {
+        "color" : null,
+        "opacity" : null
+      }
+    } ],
+    "tab" : "STYLE",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "display_width" : null,
+    "default" : {
+      "text_color_field" : {
+        "color" : null,
+        "opacity" : null
+      },
+      "background_color" : {
+        "color" : null,
+        "opacity" : null
+      }
+    }
+  }, {
+    "id" : "588e74ab-6bad-41a7-041b-155e51eed6bc",
+    "name" : "card",
+    "label" : "Card",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "styles.border",
+      "name" : "border",
+      "label" : "Border",
+      "required" : false,
+      "locked" : false,
+      "allow_custom_border_sides" : false,
+      "type" : "border",
+      "display_width" : null,
+      "default" : {
+        "top" : {
+          "width" : {
+            "value" : 2,
+            "units" : "px"
+          },
+          "opacity" : 100,
+          "style" : "solid",
+          "color" : "#494A52"
+        },
+        "right" : {
+          "width" : {
+            "value" : 2,
+            "units" : "px"
+          },
+          "opacity" : 100,
+          "style" : "solid",
+          "color" : "#494A52"
+        },
+        "bottom" : {
+          "width" : {
+            "value" : 2,
+            "units" : "px"
+          },
+          "opacity" : 100,
+          "style" : "solid",
+          "color" : "#494A52"
+        },
+        "left" : {
+          "width" : {
+            "value" : 2,
+            "units" : "px"
+          },
+          "opacity" : 100,
+          "style" : "solid",
+          "color" : "#494A52"
+        }
+      }
+    } ],
+    "tab" : "STYLE",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "display_width" : null,
+    "default" : {
+      "border" : {
+        "top" : {
+          "width" : {
+            "value" : 2,
+            "units" : "px"
+          },
+          "opacity" : 100,
+          "style" : "solid",
+          "color" : "#494A52"
+        },
+        "right" : {
+          "width" : {
+            "value" : 2,
+            "units" : "px"
+          },
+          "opacity" : 100,
+          "style" : "solid",
+          "color" : "#494A52"
+        },
+        "bottom" : {
+          "width" : {
+            "value" : 2,
+            "units" : "px"
+          },
+          "opacity" : 100,
+          "style" : "solid",
+          "color" : "#494A52"
+        },
+        "left" : {
+          "width" : {
+            "value" : 2,
+            "units" : "px"
+          },
+          "opacity" : 100,
+          "style" : "solid",
+          "color" : "#494A52"
+        }
+      }
+    }
+  } ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "team_info" : {
+      "text_color_field" : {
+        "color" : null,
+        "opacity" : null
+      },
+      "background_color" : {
+        "color" : null,
+        "opacity" : null
+      }
+    },
+    "card" : {
+      "border" : {
+        "top" : {
+          "width" : {
+            "value" : 2,
+            "units" : "px"
+          },
+          "opacity" : 100,
+          "style" : "solid",
+          "color" : "#494A52"
+        },
+        "right" : {
+          "width" : {
+            "value" : 2,
+            "units" : "px"
+          },
+          "opacity" : 100,
+          "style" : "solid",
+          "color" : "#494A52"
+        },
+        "bottom" : {
+          "width" : {
+            "value" : 2,
+            "units" : "px"
+          },
+          "opacity" : 100,
+          "style" : "solid",
+          "color" : "#494A52"
+        },
+        "left" : {
+          "width" : {
+            "value" : 2,
+            "units" : "px"
+          },
+          "opacity" : 100,
+          "style" : "solid",
+          "color" : "#494A52"
+        }
+      }
+    }
   }
-]
+} ]

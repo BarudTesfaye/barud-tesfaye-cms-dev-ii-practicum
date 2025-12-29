@@ -28,3 +28,16 @@
   {% endfor %}
 </div>
 
+{% require_css %}
+  <style>
+    {% scope_css %}
+      .team-card {
+        {{ module.style.card.border.css }}
+      }
+      .team-info {
+        color: {{ module.style.team_info.text_color_field.color }};
+        background: {{ module.style.team_info.background_color.color }};
+      }
+    {% end_scope_css %}
+  </style>
+{% end_require_css %}
