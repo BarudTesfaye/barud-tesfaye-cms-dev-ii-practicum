@@ -46,7 +46,6 @@
         "label": "Tertiary",
         "name": "tertiary",
         "type": "color",
-        "alternate_names": ["tertiary_color"],
         "visibility": {
           "hidden_subfields": {
             "opacity": true
